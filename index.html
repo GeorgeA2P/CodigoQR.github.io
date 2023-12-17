@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario de conctato</title>
+</head>
+<body>
+
+    <div class="form ">
+        <h2>Información de conctato</h2>
+        <input class="inputs" type=" text" name="nombres" id="nombres" autocomplete="off" placeholder="Ingrese su nombre">
+        <input class="inputs" type=" text" name="apellidos" id="apellidos" autocomplete="off" placeholder="Ingrese su apellido">
+        <input class="inputs" type=" tel" name="telefono" id="telefono" autocomplete="off" placeholder="Ingrese su numero de telefono">
+        
+        <button onclick="generateQR()" id="generarQR">Generar QR</button>
+        <div class="qr-container" id="qrcode"></div>
+    </div>
+
+  <script src="./qrcode.min.js"></script> <!-- Integración de la libreria qrcode -->
+  <script src="QR.js"></script>
+    
+</body>
+</html>
